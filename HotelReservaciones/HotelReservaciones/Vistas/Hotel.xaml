@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+    x:Class="HotelReservaciones.Vistas.Hotel">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout >
+             <Grid>
+            <StackLayout Margin="15, 20, 15, 0">
+                <Frame BackgroundColor="White" HasShadow="True" HeightRequest="700" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        <StackLayout HorizontalOptions="Start">
+                            <Label Text="Nuevo Hotel" FontSize="Medium" FontAttributes="Bold" TextColor="#159EEE"></Label>
+                        </StackLayout>
+                        <StackLayout Margin="0, 15, 0, 0">
+                            <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtNombre" Placeholder="Nombre" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                            <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtDescripcion" Placeholder="Descripcion"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                             <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtEmail" Placeholder="Correo Electronico"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                              <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtDireccion" Placeholder="Direccion"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                              <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtUbicacion" Placeholder="Ubicacion"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                             <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtTelefono" Placeholder="Telefono"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                             <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtFoto" Placeholder="Url Fotografia"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                             <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Maps:Map WidthRequest="320" HeightRequest="150" x:Name="MyMap" MapType="Street" />
+
+
+
+
+                                  </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label/>
+                        </StackLayout>
+                        <Button x:Name="btnRegistro" Text="Registrar" BackgroundColor="#159EEE" TextColor="White" FontAttributes="Bold" CornerRadius="10" Clicked="btnRegistro_Clicked"/>
+                        <Button x:Name="btnVer" Text="Rezalizar Reserva" BackgroundColor="#5cb85c" TextColor="White" FontAttributes="Bold" CornerRadius="10" Clicked="btnVer_Clicked"/>
+                      <Label></Label>
+                       
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>                     
+
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+

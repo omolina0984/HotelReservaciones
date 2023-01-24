@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="HotelReservaciones.Vistas.Registrarse">
+    <ContentPage.Content>
+         <StackLayout>
+                  <Grid>
+            <StackLayout Margin="15, 20, 15, 0">
+                <Frame BackgroundColor="White" HasShadow="True" HeightRequest="700" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        <StackLayout HorizontalOptions="Start">
+                            <Label Text="Registrarse" FontSize="Medium" FontAttributes="Bold" TextColor="#159EEE"></Label>
+                        </StackLayout>
+                        <StackLayout Margin="0, 15, 0, 0">
+                            <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtNombres" Placeholder="Nombres" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                            <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtApellidos" Placeholder="Apellidos"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                             <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtEmail" Placeholder="Correo Electronico"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                              <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtUsuario" Placeholder="Nombre de Usuario"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                              <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtContraseña" Placeholder="Contraseña" IsPassword="True" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                             <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtConfirmar" Placeholder="Confirmar Contraseña" IsPassword="True" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label/>
+                        </StackLayout>
+                        <Button x:Name="btnRegistro" Text="Registrarse" BackgroundColor="#159EEE" TextColor="White" FontAttributes="Bold" CornerRadius="10" Clicked="btnRegistro_Clicked"/>
+                      
+                        <StackLayout>
+                            <Grid>
+                                <BoxView BackgroundColor="DarkGray" HeightRequest="1" Margin="50" HorizontalOptions="FillAndExpand" WidthRequest="130"/>
+                                <Frame BackgroundColor="White" BorderColor="DarkGray" WidthRequest="50" Padding="0" Margin="0" HeightRequest="50" CornerRadius="30" HasShadow="False" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                                    <Label Text="O" TextColor="DarkGray" FontSize="Small" HorizontalTextAlignment="Center" FontAttributes="Bold" VerticalTextAlignment="Center"/>
+                                </Frame>
+                            </Grid>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                <Frame  WidthRequest="50" Padding="0" Margin="0" HeightRequest="50" CornerRadius="30" HasShadow="False">
+                                    <ImageButton x:Name="btnRegistroGoogle" Source="Google.png" Aspect="Fill" Margin="0" Clicked="btnRegistroGoogle_Clicked"/>
+                                </Frame>
+                              
+                            </StackLayout>
+                        </StackLayout>
+                          <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                            <Label Text="¿Tienes una Cuenta?" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                             <Button x:Name="btnIniciar" Text="Iniciar Sesión" BackgroundColor="#159EEE" TextColor="White" FontAttributes="Bold" CornerRadius="10" Clicked="btnIniciar_Clicked"/>
+                      
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

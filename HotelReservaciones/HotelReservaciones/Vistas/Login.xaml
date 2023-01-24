@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="HotelReservaciones.Vistas.Login">
+    <ContentPage.Content>
+        <StackLayout>
+                  <Grid>
+            <StackLayout Padding="0" Margin="0">
+                <Frame HeightRequest="150" HorizontalOptions="FillAndExpand" Padding="0">
+                    <Image Source="rsz_rixos_hotels_logo.png"  Margin="0"/>
+                </Frame>
+            </StackLayout>
+            <StackLayout Margin="15, 130, 15, 0">
+                <Frame BackgroundColor="White" HasShadow="True" HeightRequest="480" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        <StackLayout HorizontalOptions="CenterAndExpand">
+                            <Label Text="Iniciar Sesión" FontSize="Medium" FontAttributes="Bold" TextColor="#159EEE"></Label>
+                        </StackLayout>
+                        
+                        <StackLayout Margin="0, 25, 0, 0">
+                            <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtEmail" Placeholder="Email o Usuario" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                            <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,15,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtPassword" Placeholder="Password" IsPassword="True" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label/>
+                        </StackLayout>
+                        <Button x:Name="btnIngresar" Text="Ingresar" BackgroundColor="#159EEE" TextColor="White" FontAttributes="Bold" CornerRadius="10" Clicked="btnIngresar_Clicked"/>
+                      
+                        <StackLayout>
+                            <Grid>
+                                <BoxView BackgroundColor="DarkGray" HeightRequest="1" Margin="50" HorizontalOptions="FillAndExpand" WidthRequest="130"/>
+                                <Frame BackgroundColor="White" BorderColor="DarkGray" WidthRequest="50" Padding="0" Margin="0" HeightRequest="50" CornerRadius="30" HasShadow="False" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                                    <Label Text="O" TextColor="DarkGray" FontSize="Small" HorizontalTextAlignment="Center" FontAttributes="Bold" VerticalTextAlignment="Center"/>
+                                </Frame>
+                            </Grid>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                <Frame  WidthRequest="50" Padding="0" Margin="0" HeightRequest="50" CornerRadius="30" HasShadow="False">
+                                    <ImageButton x:Name="btnIngresoGoogle" Source="Google.png" Aspect="Fill" Margin="0" Clicked="btnIngresoGoogle_Clicked"/>
+                                </Frame>
+                              
+                            </StackLayout>
+                        </StackLayout>
+                          <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                            <Label Text="¿No tengo una cuenta?" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                             <Button x:Name="btnRegistrarse" Text="Registrarse" BackgroundColor="#159EEE" TextColor="White" FontAttributes="Bold" CornerRadius="10" Clicked="btnRegistrarse_Clicked"/>
+                      
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

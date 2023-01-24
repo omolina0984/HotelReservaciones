@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="HotelReservaciones.Vistas.Habitacion">
+    <ContentPage.Content>
+        <StackLayout>
+             <ScrollView>
+        <StackLayout >
+             <Grid>
+            <StackLayout Margin="15, 20, 15, 0">
+                <Frame BackgroundColor="White" HasShadow="True" HeightRequest="700" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        <StackLayout HorizontalOptions="Start">
+                            <Label Text="Nueva Habitacion" FontSize="Medium" FontAttributes="Bold" TextColor="#159EEE"></Label>
+                        </StackLayout>
+                        <StackLayout Margin="0, 15, 0, 0">
+                            <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Picker x:Name="listhotel"
+                                            ItemDisplayBinding="{Binding nombreHotel}"
+                                            Title="Seleciona un Hotel"
+                                            TextColor="Black"
+                                            SelectedIndexChanged="listhotel_SelectedIndexChanged">
+                                        <Picker.Items>
+                                        </Picker.Items>
+                                    </Picker>
+                                </StackLayout>
+                            </Frame>
+                            <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtcodigoHabitacion" Placeholder="Codigo Habitacion"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                             <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                       <Picker x:Name="ddllTipo"
+                                            ItemDisplayBinding="{Binding descTipo}"
+                                            Title="Seleciona Tipo"
+                                            TextColor="Black"
+                                            SelectedIndexChanged="ddllTipo_SelectedIndexChanged">
+                                       <Picker.Items>
+                                        </Picker.Items>
+                                    </Picker>
+                    
+                                </StackLayout>
+                            </Frame>
+                              <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtnombreHabitacion" Placeholder="Nombre de la Habitacion"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                         
+                             <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtfoto1Habitacion" Placeholder="Url Fotografia"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                             <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtfoto2Habitacion" Placeholder="Url Fotografia"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                            <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtcapacidad" Placeholder="Capacidad" Keyboard="Numeric"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                                <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtPrecio" Placeholder="Precio" Keyboard="Numeric"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label/>
+                        </StackLayout>
+                        <Button x:Name="btnAgregar" Text="Agregar" BackgroundColor="#159EEE" TextColor="White" FontAttributes="Bold" CornerRadius="10" Clicked="btnAgregar_Clicked"/>
+                        <Button x:Name="btnVer" Text="Rezalizar Reserva" BackgroundColor="#5cb85c" TextColor="White" FontAttributes="Bold" CornerRadius="10" Clicked="btnVer_Clicked"/>
+                      <Label></Label>
+                       
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>                     
+
+        </StackLayout>
+        </ScrollView>
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
+

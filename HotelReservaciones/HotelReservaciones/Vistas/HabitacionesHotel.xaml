@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="HotelReservaciones.Vistas.HabitacionesHotel">
+    <ContentPage.Content>
+        <StackLayout>
+             <ScrollView>
+        <StackLayout>
+            <Label Text="Habitaciones Disponibles" FontSize="20" TextColor="#159EEE" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+
+            <ListView x:Name="ListHabitaciones" HorizontalOptions="StartAndExpand" VerticalOptions="FillAndExpand"
+SeparatorColor="LightGray" SeparatorVisibility="Default" HasUnevenRows="True" ItemTapped="ListHabitaciones_ItemTapped">
+<ListView.ItemTemplate>
+<DataTemplate>
+<ViewCell>
+<StackLayout Orientation="Horizontal" Padding="5" VerticalOptions="FillAndExpand"
+MinimumHeightRequest="100">
+
+<Image Source="{Binding foto1Habitacion}" WidthRequest="80" HeightRequest="80"></Image>
+<StackLayout Orientation="Vertical" Padding="2" VerticalOptions="Center">
+<Label Text="{Binding nombreHabitacion}" FontSize="20" Margin="2" TextColor="Black" FontAttributes="Bold"/>
+<Label Text="{Binding tipoHabitacion}" FontSize="14" Margin="2" TextColor="Black" FontAttributes="Bold"/>
+     <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+<Label Text="$" FontSize="12" Margin="2" TextColor="#159EEE"/>
+<Label Text="{Binding precioHabitacion}" FontSize="12" Margin="2" TextColor="#159EEE"/>
+</StackLayout>
+</StackLayout>
+</StackLayout>
+</ViewCell>
+</DataTemplate>
+</ListView.ItemTemplate>
+</ListView>
+
+        </StackLayout>
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="HotelReservaciones.Vistas.ReservarHabitacion">
+    <ContentPage.Content>
+          <ScrollView>
+        <StackLayout >
+          <Grid>
+            <StackLayout Margin="15, 20, 15, 0">
+                <Frame BackgroundColor="White" HasShadow="True" HeightRequest="700" HorizontalOptions="FillAndExpand">
+          <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="5"
+                     Spacing="5">
+           <Label Text="Realizar Reserva" FontSize="20" TextColor="#159EEE" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Image x:Name="img1"   Source="" WidthRequest="200" HeightRequest="200">
+              
+            </Image>
+            <StackLayout Orientation="Vertical" Padding="15">
+                <Label x:Name="lblNombre" Text="" FontSize="20" TextColor="Black" FontAttributes="Bold"/>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                <Label Text="Tipo:" TextColor="Black" FontAttributes="Bold"/>
+                <Label x:Name="lbltipo" Text="" TextColor="Black"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                 <Label Text="Capacidad:" TextColor="Black" FontAttributes="Bold"/>
+                <Label x:Name="lblcapacidad" Text=""  TextColor="Black"/>
+            </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                 <Label Text="Precio:" TextColor="Black" FontAttributes="Bold"/>
+                <Label x:Name="lblPrecio" Text=""  TextColor="Black"/>
+            </StackLayout>
+                  <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                               
+              <StackLayout Orientation="Horizontal">
+               <Entry x:Name="txtCodigo" Placeholder="Codigo de Reserva"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+             </StackLayout>
+                  </Frame>
+                  <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                               
+              <StackLayout Orientation="Horizontal">
+               <Entry x:Name="txtDias" Placeholder="No. Dias"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0" TextChanged="txtDias_TextChanged"></Entry>
+             </StackLayout>
+                  </Frame>
+                    <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                               
+              <StackLayout Orientation="Horizontal">
+               <Entry x:Name="txtHoraIngreso" Placeholder="Hora Ingreso" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+             </StackLayout>
+                  </Frame>
+                     <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                               
+              <StackLayout Orientation="Horizontal">
+               <Entry x:Name="txtHoraSalida" Placeholder="Hora Salida" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+             </StackLayout>
+                  </Frame>
+                    <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                               
+              <StackLayout Orientation="Horizontal">
+               <Entry x:Name="txtTotal" Placeholder="Total" Keyboard="Numeric" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0" IsEnabled="False"></Entry>
+             </StackLayout>
+                  </Frame>
+            </StackLayout>
+        </StackLayout>
+              </Frame>
+            </StackLayout>
+        </Grid>
+                </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+
