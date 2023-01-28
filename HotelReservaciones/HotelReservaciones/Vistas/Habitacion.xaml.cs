@@ -14,7 +14,7 @@ namespace HotelReservaciones.Vistas
         private readonly HttpClient client = new HttpClient();
         private ObservableCollection<Datos.Hotel> _post;
         private ObservableCollection<Datos.TipoHabitacion> _posttipo;
-        private string idHotel = "";
+        //private string idHotel = "";
         public Habitacion()
         {
             InitializeComponent();

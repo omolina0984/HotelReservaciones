@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.hotelreservaciones">
 	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="33" />
-	<application android:label="HotelReservaciones.Android" android:theme="@style/MainTheme">
+	<application android:label="HotelReservaciones.Android" android:theme="@style/MainTheme" android:usesCleartextTraffic="true">
 		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAVhRY8P0NoTy7DeVaQ6-w1i6KMXoNsRPc" />
 	</application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
