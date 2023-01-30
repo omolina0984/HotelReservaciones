@@ -12,8 +12,8 @@ namespace HotelReservaciones.Controlador
         {
             try
             {
-                string from = "";
-                string pass = "";
+                string from = "davidnava1998efrain@outlook.com";
+                string pass = "Quakewar199812*";
                 m.From = new MailAddress(from);
                 m.To.Add(new MailAddress(to));
 
