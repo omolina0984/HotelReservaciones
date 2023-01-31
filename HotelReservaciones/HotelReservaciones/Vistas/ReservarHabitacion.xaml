@@ -7,12 +7,12 @@
           <ScrollView>
         <StackLayout >
           <Grid>
-            <StackLayout Margin="15, 20, 15, 0">
+            <StackLayout Margin="15, 10, 15, 0">
                 <Frame BackgroundColor="White" HasShadow="True" HeightRequest="700" HorizontalOptions="FillAndExpand">
           <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="5"
                      Spacing="5">
            <Label Text="Realizar Reserva" FontSize="20" TextColor="#159EEE" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-            <Image x:Name="img1"   Source="" WidthRequest="200" HeightRequest="200">
+            <Image x:Name="img1"   Source="" WidthRequest="150" HeightRequest="150">
               
             </Image>
             <StackLayout Orientation="Vertical" Padding="15">
@@ -30,9 +30,23 @@
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
                  <Label Text="Precio:" TextColor="Black" FontAttributes="Bold"/>
                 <Label x:Name="lblPrecio" Text=""  TextColor="Black"/>
+                  <Button x:Name="btnReservar" Text="Reservar" BackgroundColor="#5cb85c" TextColor="White" FontAttributes="Bold" CornerRadius="10" Clicked="btnReservar_Clicked"/>
+                   
             </StackLayout>
+                    <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Picker x:Name="listCliente"
+                                            ItemDisplayBinding="{Binding FullName}"
+                                            Title="Seleciona un Cliente"
+                                            TextColor="Black"
+                                            SelectedIndexChanged="listCliente_SelectedIndexChanged">
+                                        <Picker.Items>
+                                        </Picker.Items>
+                                    </Picker>
+                                </StackLayout>
+                            </Frame>
                   <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
-                               
+
               <StackLayout Orientation="Horizontal">
                <Entry x:Name="txtCodigo" Placeholder="Codigo de Reserva"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
              </StackLayout>
@@ -61,10 +75,17 @@
                <Entry x:Name="txtTotal" Placeholder="Total" Keyboard="Numeric" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0" IsEnabled="False"></Entry>
              </StackLayout>
                   </Frame>
+                        <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                               
+              <StackLayout Orientation="Horizontal">
+                   
+                </StackLayout>
+                  </Frame>
             </StackLayout>
         </StackLayout>
               </Frame>
             </StackLayout>
+       
         </Grid>
                 </StackLayout>
         </ScrollView>

@@ -14,7 +14,7 @@ namespace HotelReservaciones.Controlador
 	{
         Service servicio = new Service();
         private readonly HttpClient client = new HttpClient();
-        private ObservableCollection<Hotel> _post;
+        //private ObservableCollection<Hotel> _post;
         WebClient cliente = new WebClient();
 
         public async Task<IEnumerable<Hotel>> GetAllHotel()

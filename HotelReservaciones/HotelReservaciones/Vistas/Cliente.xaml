@@ -5,7 +5,63 @@
     x:Class="HotelReservaciones.Vistas.Cliente">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="cliente"/>
+              <ScrollView>
+        <StackLayout >
+             <Grid>
+            <StackLayout Margin="15, 20, 15, 0">
+                <Frame BackgroundColor="White" HasShadow="True" HeightRequest="700" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        <StackLayout HorizontalOptions="Start">
+                            <Label Text="Nueva Cliente" FontSize="Medium" FontAttributes="Bold" TextColor="#159EEE"></Label>
+                        </StackLayout>
+                        <StackLayout Margin="0, 15, 0, 0">
+                            <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Picker x:Name="listUsuario"
+                                            ItemDisplayBinding="{Binding FullName}"
+                                            Title="Seleciona un Usuario"
+                                            TextColor="Black"
+                                            SelectedIndexChanged="listUsuario_SelectedIndexChanged">
+                                        <Picker.Items>
+                                        </Picker.Items>
+                                    </Picker>
+                                </StackLayout>
+                            </Frame>
+                            <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="txtCedula" Placeholder="Cedula Usuario"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0, 0, 15, 0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                             <Frame BackgroundColor="White" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="4" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                       <Picker x:Name="listHotel"
+                                            ItemDisplayBinding="{Binding nombreHotel}"
+                                            Title="Seleciona Hotel"
+                                            TextColor="Black"
+                                            SelectedIndexChanged="listHotel_SelectedIndexChanged">
+                                       <Picker.Items>
+                                        </Picker.Items>
+                                    </Picker>
+                    
+                                </StackLayout>
+                            </Frame>
+                           
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label/>
+                        </StackLayout>
+                        <Button x:Name="btnAgregar" Text="Agregar" BackgroundColor="#159EEE" TextColor="White" FontAttributes="Bold" CornerRadius="10" Clicked="btnAgregar_Clicked"/>
+                        <Button x:Name="btnVer" Text="Rezalizar Reserva" BackgroundColor="#5cb85c" TextColor="White" FontAttributes="Bold" CornerRadius="10" Clicked="btnVer_Clicked"/>
+                      <Label></Label>
+                       
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>                     
+
+        </StackLayout>
+        </ScrollView>
 
         </StackLayout>
 
