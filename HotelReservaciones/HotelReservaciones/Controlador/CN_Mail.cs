@@ -13,7 +13,7 @@ namespace HotelReservaciones.Controlador
             try
             {
 
-                string from = "";
+                string from = " ";
                 string pass = "";
                 m.From = new MailAddress(from);
                 m.To.Add(new MailAddress(to));
